@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+.play-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 20px;
+}
+
+.track-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.track-controls {
+    display: flex;
+    gap: 10px;
+}
+
+.play-button, .delete-button {
+    cursor: pointer;
+    font-size: 20px;
+    text-decoration: none;
+    color: #333;
+    border: 1px solid #333;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.play-button:hover, .delete-button:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+input[type="checkbox"] {
+    margin-right: 5px;
+}

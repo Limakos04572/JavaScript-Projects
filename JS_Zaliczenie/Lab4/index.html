@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="editNotePopup">
+      <div class="popup-content">
+        <span class="close" onclick="closeEditPopup()">&times;</span>
+        <h2>Edytuj notatkę</h2>
+        <input type="text" id="editTitle" placeholder="Tytuł" />
+        <textarea id="editContent" placeholder="Treść"></textarea>
+        <input type="color" id="editColor" value="#ffffff" />
+        <input type="text" id="editTags" placeholder="Tagi" />
+        <button onclick="saveEditedNote()">Zapisz zmiany</button>
+      </div>
+    </div>
+
+    <input
+      type="text"
+      id="searchInput"
+      oninput="searchNotes(this.value)"
+      placeholder="Wyszukaj notatki"
+    />
+
+    <div class="input-container">
+      <p>Tytuł</p>
+      <input id="title" type="text" />
+      <p>Treść</p>
+      <input id="content" type="text" />
+      <p>Kolor notatki</p>
+      <input id="color" type="color" />
+      <p>Tagi</p>
+      <input id="tags" type="text" />
+      <button onclick="saveValues()" id="save">Zapisz</button>
+    </div>
+
+    <div id="notes-container"></div>
+
+    <script src="main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+  }
+  
+  #weatherForm {
+    margin: 20px;
+  }
+  
+  #weatherContainer {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw;
+  }
+  
+  .weather-item {
+    border-radius: 5px;
+    background-color: #dbdbdb;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .weather-item > :first-child {
+    margin-top: 10px;
+  }
+  
+  .weather-item > * {
+    margin-bottom: 7px;
+    padding: 5px;
+  }
+  
+  .weather-item > button {
+    border-radius: 5px;
+    border-style: none;
+    padding: 10px;
+    background-color: #dbdbdb;
+  }
+  
+  .weather-item > button:hover {
+    background-color: rgb(189, 16, 16);
+    cursor: pointer;
+  }
+  

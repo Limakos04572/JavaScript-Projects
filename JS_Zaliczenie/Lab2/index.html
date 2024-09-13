@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="slider">
+        <div id="photoContainer" class="slides">
+            <div>
+                <img src="http://picsum.photos/id/10/600/400" alt="">
+            </div>
+            <div>
+                <img src="http://picsum.photos/id/20/600/400" alt="">
+            </div>
+            <div>
+                <img src="http://picsum.photos/id/30/600/400" alt="">
+            </div>
+            <div>
+                <img src="http://picsum.photos/id/40/600/400" alt="">
+            </div>
+            <div>
+                <p>TEST TEXT</p>
+            </div>
+            <div>
+                <video controls width="600" height="400" src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4"  alt="">
+            </div>
+        </div>
+
+        <div class="buttons">
+            <a id="prev">&#10094;</a>
+            <a id="next">&#10095;</a>
+        </div>
+        
+        <div class="dots">
+            <span class="dot active" onclick="dotSlider(0)"></span>
+            <span class="dot" onclick="dotSlider(1)"></span>
+            <span class="dot" onclick="dotSlider(2)"></span>
+            <span class="dot" onclick="dotSlider(3)"></span>
+            <span class="dot" onclick="dotSlider(4)"></span>
+            <span class="dot" onclick="dotSlider(5)"></span>
+        </div>
+
+    </div>
+    <div class="container">
+        <a id="play" onclick="playStop()">&#9209;</a>
+    </div>
+
+    <main>
+    </main>
+    <script src="main.js"></script>
+</body>
+
+</html>

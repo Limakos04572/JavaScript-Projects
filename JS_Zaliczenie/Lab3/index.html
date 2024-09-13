@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <audio src="./sounds/boom.wav" id="s1"></audio>
+    <audio src="./sounds/clap.wav" id="s2"></audio>
+    <audio src="./sounds/hihat.wav" id="s3"></audio>
+    <audio src="./sounds/kick.wav" id="s4"></audio>
+    <audio src="./sounds/openhat.wav" id="s5"></audio>
+    <audio src="./sounds/ride.wav" id="s6"></audio>
+    <audio src="./sounds/snare.wav" id="s7"></audio>
+    <!-- <audio src="./sounds/tink.wav" id="s8"></audio> -->
+    <audio src="./sounds/tom.wav" id="s9"></audio>
+
+    <audio src="./sounds/tink.wav" id="metronome"></audio>
+
+    <div class="play-buttons">
+        <div class="track-container">
+            <input type="checkbox" id="check1">
+            <div class="track-controls">
+                <a class="play-button" id="track1">&#9658;</a>
+                <a class="delete-button" id="delete1">&#10005;</a>
+            </div>
+        </div>
+        <div class="track-container">
+            <input type="checkbox" id="check2">
+            <div class="track-controls">
+                <a class="play-button" id="track2">&#9658;</a>
+                <a class="delete-button" id="delete2">&#10005;</a>
+            </div>
+        </div>
+        <div class="track-container">
+            <input type="checkbox" id="check3">
+            <div class="track-controls">
+                <a class="play-button" id="track3">&#9658;</a>
+                <a class="delete-button" id="delete3">&#10005;</a>
+            </div>
+        </div>
+        <div class="track-container">
+            <input type="checkbox" id="check4">
+            <div class="track-controls">
+                <a class="play-button" id="track4">&#9658;</a>
+                <a class="delete-button" id="delete4">&#10005;</a>
+            </div>
+        </div>
+
+        <button id="play-all">Play all selected</button>
+    </div>
+
+    <div>
+        <label for="bpm">BPM:</label>
+        <input type="number" id="bpm" value="120" min="1">
+        <button id="toggleMetronome">Toggle Metronome</button>
+      </div>
+
+    <script src="drumkit.js"></script>
+</body> 
+</html>
