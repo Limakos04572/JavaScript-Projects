@@ -17,7 +17,7 @@ let animationId;
 const forceMultiplierX = 1; // Może być konfigurowalny przez użytkownika
 const forceMultiplierY = 1; // Może być konfigurowalny przez użytkownika
 
-// Ball class to represent each ball on the canvas
+
 class Ball {
   constructor(x, y, dx, dy, radius) {
     this.x = x;
